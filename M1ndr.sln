@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6C83A596-D32D-B35F-00DD-F0C99B673980}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{C516C750-8046-4DA5-B6BC-37FB8DE57A9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{704748F6-8EB1-4D7D-BB60-21A63CC6E201}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "hosting", "hosting", "{154E64E6-FF00-4703-B9A7-9A6F6504412C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "aspire", "aspire", "{3C204211-608A-454B-A337-B72559F72D52}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "containers", "containers", "{1EBB4D0C-E5D7-4C75-9D86-67F52C0CC1ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{3B586A51-8B2E-4812-97BF-F2786586A1F4}"
+	ProjectSection(SolutionItems) = preProject
+		.github\dependabot.yml = .github\dependabot.yml
+		.github\pull_request_template.md = .github\pull_request_template.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution", "solution", "{EC15FD06-53CE-4734-AA2A-04221EC53ACE}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		GitVersion.yml = GitVersion.yml
+		global.json = global.json
+		LICENSE = LICENSE
+		NuGet.Config = NuGet.Config
+		README.md = README.md
+		sonar-project.properties = sonar-project.properties
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "frontend", "frontend", "{74A81D9B-16CD-4098-9891-F83B8F45F143}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M1ndr.Hosting.Aspire.AppHost", "hosting\aspire\M1ndr.Hosting.Aspire.AppHost\M1ndr.Hosting.Aspire.AppHost.csproj", "{250BC60F-A2D1-75A0-FF01-E0F0DA8038CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{7BFDA9A8-5145-43BF-A87D-EDE4CAF3B953}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{6A0E8178-5944-4BDF-B525-2D00A6E7EC80}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\ci-cd.yml = .github\workflows\ci-cd.yml
+		.github\workflows\security.yml = .github\workflows\security.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ISSUE_TEMPLATE", "ISSUE_TEMPLATE", "{2CD5FC46-4D9C-4693-8F7F-B6518FF439DC}"
+	ProjectSection(SolutionItems) = preProject
+		.github\ISSUE_TEMPLATE\bug_report.md = .github\ISSUE_TEMPLATE\bug_report.md
+		.github\ISSUE_TEMPLATE\feature_request.md = .github\ISSUE_TEMPLATE\feature_request.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{250BC60F-A2D1-75A0-FF01-E0F0DA8038CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{250BC60F-A2D1-75A0-FF01-E0F0DA8038CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{250BC60F-A2D1-75A0-FF01-E0F0DA8038CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{250BC60F-A2D1-75A0-FF01-E0F0DA8038CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3C204211-608A-454B-A337-B72559F72D52} = {154E64E6-FF00-4703-B9A7-9A6F6504412C}
+		{1EBB4D0C-E5D7-4C75-9D86-67F52C0CC1ED} = {154E64E6-FF00-4703-B9A7-9A6F6504412C}
+		{74A81D9B-16CD-4098-9891-F83B8F45F143} = {6C83A596-D32D-B35F-00DD-F0C99B673980}
+		{250BC60F-A2D1-75A0-FF01-E0F0DA8038CD} = {3C204211-608A-454B-A337-B72559F72D52}
+		{7BFDA9A8-5145-43BF-A87D-EDE4CAF3B953} = {74A81D9B-16CD-4098-9891-F83B8F45F143}
+		{6A0E8178-5944-4BDF-B525-2D00A6E7EC80} = {3B586A51-8B2E-4812-97BF-F2786586A1F4}
+		{2CD5FC46-4D9C-4693-8F7F-B6518FF439DC} = {3B586A51-8B2E-4812-97BF-F2786586A1F4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {16A269F4-6842-47F4-AEFC-ACA04D88C738}
+	EndGlobalSection
+EndGlobal
