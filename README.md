@@ -29,15 +29,6 @@ An intelligent AI assistant for personal productivity built with .NET 9 and .NET
 
 ---
 
-## 🖥️ Frontend
-
-M1ndr includes a modern web frontend built with **Blazor WebAssembly** for interactive, client-side experiences. UI components are shared via a dedicated library for reuse and consistency.
-
-- **Blazor WebAssembly** project for rich web UI
-- **Shared UI library** for reusable Blazor components
-
----
-
 ## 📦 Quick Start
 
 ### Prerequisites
@@ -63,14 +54,9 @@ M1ndr/
 ├── hosting/
 │   └── aspire/
 │       └── M1ndr.Hosting.Aspire.AppHost/    # .NET Aspire AppHost
-├── src/
-│   └── frontend/
-│       └── shared/
-│           ├── M1ndr.Frontend.BlazorWasm/   # Blazor WebAssembly frontend
-│           └── M1ndr.Fronted.Shared.UI/     # Shared Blazor UI components
-├── .github/                                 # GitHub workflows and templates
-├── README.md                                # Project documentation
-├── LICENSE                                  # MIT License
+├── .github/                                  # GitHub workflows and templates
+├── README.md                                 # Project documentation
+├── LICENSE                                   # MIT License
 └── .gitignore                               # Git ignore rules
 ---
 
@@ -78,8 +64,6 @@ M1ndr/
 
 - **Framework:** .NET 9.0
 - **Hosting:** .NET Aspire 9.2.1
-- **Frontend:** Blazor WebAssembly
-- **UI Library:** Shared Blazor components
 - **Architecture:** Distributed applications
 - **AI/ML:** AI service integration for productivity
 - **Development:** Visual Studio 2022, Rider, VS Code

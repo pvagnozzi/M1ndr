@@ -17,6 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "containers", "containers", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{3B586A51-8B2E-4812-97BF-F2786586A1F4}"
 	ProjectSection(SolutionItems) = preProject
+		.github\copilot-instructions.md = .github\copilot-instructions.md
 		.github\dependabot.yml = .github\dependabot.yml
 		.github\pull_request_template.md = .github\pull_request_template.md
 	EndProjectSection
@@ -104,6 +105,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M1ndr.Frontend.UI.Web.Clien
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ui", "ui", "{516CB002-D45D-43BF-98E0-0A1C3E34C897}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "backend", "backend", "{577E209D-7074-4664-99D7-831338B08CE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M1ndr.Backend.Abstractions", "src\backend\M1ndr.Backend.Abstractions\M1ndr.Backend.Abstractions.csproj", "{DEFC7A7A-7BA9-4AE3-BC16-C191C986650F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{30338784-D31C-4929-94D3-FE8AD032C94A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XD.Core.Services", "src\shared\core\XD.Core.Services\XD.Core.Services.csproj", "{0A00469A-0542-4255-AF9F-2656792FC71E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{1A141601-6AD6-4B6F-93A5-AFCE727CA7FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XD.Core", "src\shared\core\XD.Core\XD.Core.csproj", "{293E5FD0-09A4-47AB-84D5-8E29EE8F9B5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -131,6 +144,18 @@ Global
 		{DB18B6C1-56C6-45DD-AE20-6483BFECBA03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB18B6C1-56C6-45DD-AE20-6483BFECBA03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB18B6C1-56C6-45DD-AE20-6483BFECBA03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEFC7A7A-7BA9-4AE3-BC16-C191C986650F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEFC7A7A-7BA9-4AE3-BC16-C191C986650F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEFC7A7A-7BA9-4AE3-BC16-C191C986650F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEFC7A7A-7BA9-4AE3-BC16-C191C986650F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A00469A-0542-4255-AF9F-2656792FC71E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A00469A-0542-4255-AF9F-2656792FC71E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A00469A-0542-4255-AF9F-2656792FC71E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A00469A-0542-4255-AF9F-2656792FC71E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{293E5FD0-09A4-47AB-84D5-8E29EE8F9B5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{293E5FD0-09A4-47AB-84D5-8E29EE8F9B5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{293E5FD0-09A4-47AB-84D5-8E29EE8F9B5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{293E5FD0-09A4-47AB-84D5-8E29EE8F9B5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -155,6 +180,12 @@ Global
 		{A853C22A-E5C8-49CC-99A4-493E1CB68BAC} = {516CB002-D45D-43BF-98E0-0A1C3E34C897}
 		{DB18B6C1-56C6-45DD-AE20-6483BFECBA03} = {516CB002-D45D-43BF-98E0-0A1C3E34C897}
 		{516CB002-D45D-43BF-98E0-0A1C3E34C897} = {74A81D9B-16CD-4098-9891-F83B8F45F143}
+		{577E209D-7074-4664-99D7-831338B08CE0} = {6C83A596-D32D-B35F-00DD-F0C99B673980}
+		{DEFC7A7A-7BA9-4AE3-BC16-C191C986650F} = {577E209D-7074-4664-99D7-831338B08CE0}
+		{30338784-D31C-4929-94D3-FE8AD032C94A} = {6C83A596-D32D-B35F-00DD-F0C99B673980}
+		{0A00469A-0542-4255-AF9F-2656792FC71E} = {1A141601-6AD6-4B6F-93A5-AFCE727CA7FD}
+		{1A141601-6AD6-4B6F-93A5-AFCE727CA7FD} = {30338784-D31C-4929-94D3-FE8AD032C94A}
+		{293E5FD0-09A4-47AB-84D5-8E29EE8F9B5B} = {1A141601-6AD6-4B6F-93A5-AFCE727CA7FD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {16A269F4-6842-47F4-AEFC-ACA04D88C738}

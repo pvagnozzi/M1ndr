@@ -21,7 +21,6 @@ if (app.Environment.IsDevelopment())
 else
 {
     app.UseExceptionHandler("/Error", createScopeForErrors: true);
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -36,4 +35,4 @@ app.MapRazorComponents<App>()
         typeof(M1ndr.Frontend.UI.Shared._Imports).Assembly,
         typeof(M1ndr.Frontend.UI.Web.Client._Imports).Assembly);
 
-app.Run();
+await app.RunAsync();
