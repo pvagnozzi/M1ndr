@@ -1,0 +1,8 @@
+@code {
+    [Parameter]
+    public string? UserName { get; set; }
+}
+
+<div class="alert alert-info">
+    Hello @(!string.IsNullOrWhiteSpace(UserName) ? UserName : "User")! Welcome to M1ndr.
+</div>
